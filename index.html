@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <title>Product preview card</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  </style>
+</head>
+<body>
+  <main class="product-container">
+    <div class="product-preview">
+      <picture>
+        <source media="(min-width: 455px)" srcset="image-product-desktop.jpg">
+        <source media="(min-width: 0px)" srcset="image-product-mobile.jpg">
+        <img src="image-product-desktop.jpg">
+      </picture>
+    </div>
+    <div class="product-description">
+      <span class="product-catagory">Perfume</span>
+      <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
+      <p class="product-source">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <div class="product-price">
+        <span class="flat-price">$149.99</span>
+        <del><span class="sr-only">$169.99</del>
+      </div>
+      <button class="add-to-cart-btn">
+        <img src="icon-cart.svg" alt="" aria-hidden="true">
+        Add to Cart
+      </button>
+    </div>
+  </main>
+  <footer class="author-link">
+    <a href="https://www.frontendmentor.io?ref=challenge" class="link" target="_blank">Frontend Mentor</a> <span class="bar">|</span>
+    <a href="https://github.com/avipsa-c/" class="link" target="_blank">avipsa-c</a>
+  </footer>
+  <script src="script.js" defer></script> <!-- script is only loads after DOM elements load -->
+</body>
+</html>
